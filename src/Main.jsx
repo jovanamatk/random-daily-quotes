@@ -31,7 +31,7 @@ const Main = () => {
       ? 
       <>
         <h1>{randomQuote.text ? `"`+randomQuote.text+`"` : null}</h1> 
-        <h2>{randomQuote.author ? "~"+randomQuote.author : null}</h2>
+        <h2>{randomQuote.author ? `~`+randomQuote.author : null}</h2>
       </>
   : null}
        </div>

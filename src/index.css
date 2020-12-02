@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Padauk', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,11 +14,18 @@ code {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 90vh;
+  width: 60%;
+  margin:0 auto;
+  text-align: center;
 }
 
-.container ul {
-  list-style-type: none;
+.container h2 {
+  align-self: flex-end;
+  font-style: italic;
+  font-weight: 400;
 }
+

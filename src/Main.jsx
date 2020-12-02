@@ -24,9 +24,17 @@ const Main = () => {
       getRandomQuote();
     },[quotes])
 
-  return ( <div className="container"><ul>
-      <li>{randomQuote.text} - {randomQuote.author}</li>
-  </ul></div> );
+  return ( 
+     <div className="container">
+      {randomQuote.text 
+      ? 
+      <>
+        <h1>&quot;{randomQuote.text}&quot;</h1> 
+        <h2>~{randomQuote.author}</h2>
+      </>
+  : null}
+       </div>
+   );
 }
  
 export default Main;

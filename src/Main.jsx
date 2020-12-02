@@ -22,6 +22,7 @@ const Main = () => {
   
     useEffect(() => {
       getRandomQuote();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     },[quotes])
 
   return ( 
@@ -29,8 +30,8 @@ const Main = () => {
       {randomQuote.text 
       ? 
       <>
-        <h1>&quot;{randomQuote.text}&quot;</h1> 
-        <h2>~{randomQuote.author}</h2>
+        <h1>{randomQuote.text ? `"`+randomQuote.text+`"` : null}</h1> 
+        <h2>{randomQuote.author ? "~"+randomQuote.author : null}</h2>
       </>
   : null}
        </div>
